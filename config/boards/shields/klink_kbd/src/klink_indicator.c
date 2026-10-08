@@ -121,7 +121,6 @@ static int usb_conn_state_update_cb(const zmk_event_t *eh) {
         zmk_endpoints_select_transport(ZMK_TRANSPORT_USB);
     }
 
-    // 继续向 endpoints 等其他监听器传递该事件
     return ZMK_EV_EVENT_BUBBLE;
 }
 
